@@ -1,0 +1,323 @@
+.carousel-videojuegos-offset {
+	margin-top: 400px;
+}
+
+
+.contenedor-formulario {
+	background-color: rgba(255, 255, 255, 0.6);
+	border: 2px solid #fff;
+	border-radius: 10px;
+	
+	display: block;
+	
+	margin-left: auto;
+	margin-right: auto;
+	
+	padding-bottom: 20px;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 20px;
+}
+
+.contenedor-formulario-darken {
+	background-color: rgba(0, 0, 0, 0.7);
+}
+
+.contenedor-formulario-lighten {
+	background-color: rgba(255, 255, 255, 0.6);
+}
+
+.contenedor-formulario-login {
+	max-width: 350px;
+}
+
+.centrar {
+    float: left;
+    left: 50%;
+    position: relative;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.contenedor-texto-titulo {
+	text-align: center;
+	font-family: Sans-Serif, Helvetica, Arial;
+	font-size: 24px;
+	font-weight: bold;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.fondo-main { 
+	background: url('../imagenes/fondo-principal-sm.jpg') no-repeat center center;
+        background-size: cover;	
+	color: #f8f8f8;	
+	height: 100vh;
+}
+
+.fondo-principal2 {
+    background: url('http://thewallpaper.co/wp-content/uploads/2017/08/gamer-computergaming-hd-wallpaper-game-poster-Positive-Souls-video-freewidescreen.jpg') no-repeat center center;
+    background-size: cover;
+	
+	color: #f8f8f8;
+	
+	height: 100vh;
+}
+
+
+.fondo-principal {
+	background: url('../imagenes/8E0.jpg') no-repeat center center;
+        background-size: cover;
+	
+	color: #f8f8f8;
+	
+	height: 100vh;
+}
+
+
+.fondo-terror {
+	background: url('../../media/img/terror3.jpg') no-repeat center center;
+    background-size: cover;	
+	height: 100vh;
+}
+
+.gamefix-img-responsive {
+	max-height: 100%;
+	max-width: 100%;
+	height: auto;
+	width: auto;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.owl-carousel > .owl-nav {
+	text-align: center;
+	
+}
+
+.owl-carousel > .owl-nav > .owl-prev,
+.owl-carousel > .owl-nav > .owl-next {	
+	background-color: gray;
+    border: 2px solid white;
+    border-radius: 10px;
+    display: inline-block;
+    padding: 2px 10px;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+
+.owl-carousel.carousel-videojuegos > .owl-stage-outer {
+	max-height: 300px;
+}
+
+.owl-carousel.carousel-videojuegos > .owl-stage-outer img {
+	width: auto;
+}
+
+/* login bootsnipp*/
+.panel-heading {
+    padding: 5px 15px;
+}
+
+.panel-footer {
+	padding: 1px 15px;
+	color: #A0A0A0;
+}
+
+.profile-img {
+	width: 96px;
+	height: 96px;
+	margin: 0 auto 10px;
+	display: block;
+	-moz-border-radius: 50%;
+	-webkit-border-radius: 50%;
+	border-radius: 50%;
+}
+
+
+/* nav bar search box - drop down menu button */
+.navbar .navbar-search .dropdown-menu { min-width: 25px; }
+.dropdown-menu .label-icon { margin-left: 5px; }
+.btn-outline {
+    background-color: transparent;
+    color: inherit;
+    transition: all .5s;
+}
+
+
+/*estilos para el Signin (Registro de usuarios)*/
+
+
+.login-signup {
+  padding: 0 0 25px;
+  margin-top: 100px;
+}
+
+.btn-success {
+  background: #23bab5;
+  border-radius:0;
+  border: 2px solid #23bab5;
+  webkit-transition: all 400ms cubic-bezier(.4,0,.2,1);
+  transition: all 400ms cubic-bezier(.4,0,.2,1);
+}
+
+.btn-success:hover,.btn-success:focus {
+  background: rgba(26, 161, 157, 0);
+  border: 2px solid #1aa19d;
+  webkit-transition: all 400ms cubic-bezier(.4,0,.2,1);
+  transition: all 400ms cubic-bezier(.4,0,.2,1);
+  color: #23BAB5;
+}
+
+a {
+  color: #23bab5;
+}
+
+ul {
+  list-style-type: none;
+}
+
+article[role="login"] {
+  background: #fff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 10px rgba(0, 0, 0, 0.24);
+  webkit-transition: all 400ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all 400ms cubic-bezier(0.4, 0, 0.2, 1);
+  padding: 30px 50px;
+  margin-bottom: 20px;
+}
+
+article[role="login"] input[type="submit"] {
+  padding: 10px 15px;
+  font-size: 16px;
+}
+
+article[role="login"]:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 1px 15px rgba(0, 0, 0, 0.23);
+  webkit-transition: all 400ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all 400ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+article[role="login"] h3 {
+  font-size: 26px;
+  font-weight: 300;
+  color: #23bab5;
+  margin-bottom: 20px;
+}
+
+article[role="login"] p {
+  font-size: 16px;
+  padding: 5px 15px;
+}
+
+.nav-tab-holder {
+  padding: 0 0 0 30px;
+  float: right;
+}
+
+.nav-tab-holder .nav-tabs {
+  border: 0;
+  float: none;
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+}
+
+.nav-tab-holder .nav-tabs > li {
+  margin-bottom: -3px;
+  text-align: center;
+  padding: 0;
+  display: table-cell;
+  float: none;
+  padding: 0;
+}
+
+.nav-tab-holder .nav-tabs > li > a {
+  background: #d9d9d9;
+  color: #6c6c6c;
+  margin: 0;
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.nav-tab-holder .nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
+  color: #FFF;
+  background-color: #23bab5;
+  border: 0;
+  border-radius: 0;
+}
+
+.mobile-pull {
+  float: right;
+}
+
+article[role="manufacturer"] {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 10px rgba(0, 0, 0, 0.24);
+  padding: 0 0 40px;
+  max-width: 420px;
+  margin: -45px auto 0;
+}
+
+article[role="manufacturer"] header {
+  background: #23bab5;
+  color: #fff;
+  padding: 10px;
+  font-size: 18px;
+  font-weight: 300;
+}
+
+article[role="manufacturer"] h1 {
+  font-size: 26px;
+  font-weight: 300;
+  border-bottom: 1px solid #f2f2f2;
+  padding: 25px 15px;
+}
+
+article[role="manufacturer"] ul {
+  padding: 0 25px;
+}
+
+article[role="manufacturer"] ul li {
+  font-size: 16px;
+  border-bottom: 1px solid #eaeaea;
+  padding: 20px 15px;
+  color:#404040;
+}
+
+article[role="manufacturer"] ul li i {
+  color: #23bab5;
+}
+
+.login-signup {
+  padding: 0 0 25px;
+}
+
+@media only screen and (max-width: 767px) {
+  .mobile-pull {
+    float: none;
+  }
+
+  .nav-tab-holder {
+    float: none;
+    overflow: hidden;
+  }
+
+  .nav-tabs > li > a {
+    font-size: 13px;
+    font-weight: 600;
+    padding: 10px 5px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .nav-tabs > li {
+    width: 50%;
+  }
+}
+
+
+
