@@ -1,0 +1,342 @@
+<link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+
+<!DOCTYPE html><html class=''>
+<head><script src='//production-assets.codepen.io/assets/editor/live/console_runner-079c09a0e3b9ff743e39ee2d5637b9216b3545af0de366d4b9aad9dc87e26bfd.js'></script><script src='//production-assets.codepen.io/assets/editor/live/events_runner-73716630c22bbc8cff4bd0f07b135f00a0bdc5d14629260c3ec49e5606f98fdd.js'></script><script src='//production-assets.codepen.io/assets/editor/live/css_live_reload_init-2c0dc5167d60a5af3ee189d570b1835129687ea2a61bee3513dee3a50c115a77.js'></script><meta charset='UTF-8'><meta name="robots" content="noindex"><link rel="shortcut icon" type="image/x-icon" href="//production-assets.codepen.io/assets/favicon/favicon-8ea04875e70c4b0bb41da869e81236e54394d63638a1ef12fa558a4a835f1164.ico" /><link rel="mask-icon" type="" href="//production-assets.codepen.io/assets/favicon/logo-pin-f2d2b6d2c61838f7e76325261b7195c27224080bc099486ddd6dccb469b8e8e6.svg" color="#111" /><link rel="canonical" href="https://codepen.io/ryanparag/pen/LLrVbo?depth=everything&order=popularity&page=10&q=movie&show_forks=false" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css'><link rel='stylesheet prefetch' href='https://fonts.googleapis.com/icon?family=Material+Icons'>
+<link rel="stylesheet" type="text/css" href="css/gameflix.css">
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Arimo:400,700">
+<link rel="stylesheet" type="text/css" href="../../vendor/bootstrap-4.0.0/dist/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="../../vendor/bootstrap-4.0.0/dist/css/bootstrap-grid.css">
+	<link href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+	<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+	<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+	
+	<script src="../../vendor/jquery-3.3.1/jquery.min.js"></script>
+	<script src="../../vendor/bootstrap-4.0.0/dist/js/bootstrap.js"></script>
+<style class="cp-pen-styles">
+body {
+  height: 100%;
+  width: 100%;
+  background: #e9e9e9;
+  font-family: 'Arimo', Arial, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #010b26;
+}
+
+* {
+  -webkit-transition: 300ms;
+  transition: 300ms;
+}
+
+.intro {
+  text-align: center;
+}
+
+ul {
+  list-style-type: none;
+}
+
+h1, h2, h3, h4, h5, p {
+  font-weight: 400;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  color: #6ABCEA;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  max-width: 100%;
+  margin-top: 10vh;
+  margin-left: auto;
+  margin-right: auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.movie-card {
+  background: #ffffff;
+  box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 315px;
+  margin: 2em;
+  border-radius: 10px;
+  display: inline-block;
+}
+
+.movie-header {
+  padding: 0;
+  margin: 0;
+  height: 367px;
+  width: 100%;
+  display: block;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.manOfSteel {
+  background: url("https://cdn02.nintendo-europe.com/media/images/11_square_images/games_18/nintendo_switch_5/SQ_NSwitch_EASportsFifa18.jpg");
+  background-size: cover;
+}
+
+.babyDriver {
+  background: url("https://i.imgur.com/rJkTF1f.png");
+  background-size: cover;
+}
+
+.theDarkTower {
+  background: url("http://irbis-48.ru.opt-images.1c-bitrix-cdn.ru/upload/iblock/86a/86a9f65f51ce2772414139be33cd607c.jpg?151570072872736");
+  background-size: cover;
+  background-position: 100% 100%;
+}
+
+.bladeRunner2049 {
+  background: url("https://pbs.twimg.com/media/DCsNbBeWAAMo2LZ.jpg");
+  background-size: cover;
+  background-position: 100% 80%;
+}
+
+.header-icon-container {
+  position: relative;
+}
+
+.header-icon {
+  width: 100%;
+  height: 367px;
+  line-height: 367px;
+  text-align: center;
+  vertical-align: middle;
+  margin: 0 auto;
+  color: #ffffff;
+  font-size: 54px;
+  text-shadow: 0px 0px 20px #6abcea, 0px 5px 20px #6ABCEA;
+  opacity: .85;
+}
+
+.header-icon:hover {
+  background: rgba(0, 0, 0, 0.15);
+  font-size: 74px;
+  text-shadow: 0px 0px 20px #6abcea, 0px 5px 30px #6ABCEA;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  opacity: 1;
+}
+
+.movie-card:hover {
+  -webkit-transform: scale(1.03);
+          transform: scale(1.03);
+  box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+.movie-content {
+  padding: 18px 18px 24px 18px;
+  margin: 0;
+}
+
+.movie-content-header, .movie-info {
+  display: table;
+  width: 100%;
+}
+
+.movie-title {
+  font-size: 24px;
+  margin: 0;
+  display: table-cell;
+}
+
+.imax-logo {
+  width: 50px;
+  height: 15px;
+  background: url("https://vignette.wikia.nocookie.net/yugiohenespanol/images/5/57/Logo_ps4.png/revision/latest?cb=20170217024007&path-prefix=es") no-repeat;
+  background-size: contain;
+  display: table-cell;
+  float: right;
+  position: relative;
+  margin-top: 5px;
+}
+
+.movie-info {
+  margin-top: 1em;
+}
+
+.info-section {
+  display: table-cell;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.info-section:first-of-type {
+  text-align: left;
+}
+
+.info-section:last-of-type {
+  text-align: right;
+}
+
+.info-section label {
+  display: block;
+  color: rgba(0, 0, 0, 0.5);
+  margin-bottom: .5em;
+  font-size: 9px;
+}
+
+.info-section span {
+  font-weight: 700;
+  font-size: 11px;
+}
+
+@media screen and (max-width: 500px) {
+  .movie-card {
+    width: 95%;
+    max-width: 95%;
+    margin: 1em;
+    display: block;
+  }
+
+  .container {
+    padding: 0;
+    margin: 0;
+  }
+}
+</style></head><body class="fondo-deportes">
+  <div class="gallery col-lg-12 col-md-12 col-sm-12 col-xs-12"  align="center">
+			   <font size="72" color="blue" face="Arial"  >  JUEGOS DE DEPORTES</font>
+			</div>	
+
+<div class="container">
+
+	
+	<div class="movie-card">
+		<div class="movie-header manOfSteel">
+			<div class="header-icon-container">
+				<a href="https://www.youtube.com/watch?v=VASjo0Ko-QY">
+					<i class="material-icons header-icon"></i>
+				</a>
+			</div>
+		</div><!--movie-header-->
+		<div class="movie-content">
+			<div class="movie-content-header">
+				<a href="https://www.youtube.com/watch?v=VASjo0Ko-QY">
+					<h3 class="movie-title">FIFA 18</h3>
+				</a>
+				<div class="imax-logo"></div>
+			</div>
+			<div class="movie-info">
+				<div class="info-section">
+					<label>Fecha de Lanzamiento</label>
+					<span>Sun 8 Sept - 10:00PM</span>
+				</div><!--date,time-->
+				<div class="info-section">
+					<label>Nota</label>
+					<span>10</span>
+				</div><!--screen-->
+				<div class="info-section">
+					<label>Edad</label>
+					<span>+7</span>
+				</div><!--row-->
+				<div class="info-section">
+					<label>Precio</label>
+					<span>85,50€</span>
+				</div><!--seat-->
+			</div>
+				*Prueba el Demo 
+		</div><!--movie-content-->
+	</div><!--movie-card-->
+	
+	<div class="movie-card">
+		<div class="movie-header babyDriver">
+			<div class="header-icon-container">
+				<a href="https://www.youtube.com/watch?v=K5aEjfXQQAo">
+					<i class="material-icons header-icon"></i>
+				</a>
+			</div>
+		</div><!--movie-header-->
+		<div class="movie-content">
+			<div class="movie-content-header">
+				<a href="https://www.youtube.com/watch?v=MiMms755U_w">
+					<h3 class="movie-title">2K18</h3>
+				</a>
+				<div class="imax-logo"></div>
+			</div>
+			<div class="movie-info">
+				<div class="info-section">
+					<label>Fecha de Lanzamiento</label>
+					<span>Tue 4 July - 05:00PM</span>
+				</div><!--date,time-->
+				<div class="info-section">
+					<label>Nota</label>
+					<span>6</span>
+				</div><!--screen-->
+				<div class="info-section">
+					<label>Edad</label>
+					<span>+7</span>
+				</div><!--row-->
+				<div class="info-section">
+					<label>Precio</label>
+					<span>35€</span>
+				</div><!--seat-->
+			</div>
+				*Prueba el Demo 
+		</div><!--movie-content-->
+	</div><!--movie-card-->
+	
+	
+	
+	<div class="movie-card">
+		<div class="movie-header theDarkTower">
+			<div class="header-icon-container">
+				<a href="https://www.youtube.com/watch?v=gxRzzyHTaB0">
+					<i class="material-icons header-icon"></i>
+				</a>
+			</div>
+		</div><!--movie-header-->
+		<div class="movie-content">
+			<div class="movie-content-header">
+				<a href="https://www.youtube.com/watch?v=gxRzzyHTaB0">
+					<h3 class="movie-title">UFC 3</h3>
+				</a>
+				<div class="imax-logo"></div>
+			</div>
+			<div class="movie-info">
+				<div class="info-section">
+					<label>Fecha de Lanzamiento </label>
+					<span>Wed 16 Aug - 07:00PM</span>
+				</div><!--date,time-->
+				<div class="info-section">
+					<label>Nota</label>
+					<span>9</span>
+				</div><!--screen-->
+				<div class="info-section">
+					<label>Edad</label>
+					<span>+18</span>
+				</div><!--row-->
+				<div class="info-section">
+					<label>Precio</label>
+					<span>57,25</span>
+				</div><!--seat-->
+			</div>
+			       *Prueba el Demo 
+		</div><!--movie-content-->
+	</div><!--movie-card-->
+	
+	
+	
+</div><!--container-->
+
+</body></html>
